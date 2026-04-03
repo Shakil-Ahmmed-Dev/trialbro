@@ -1,6 +1,6 @@
 import { env } from './lib/t3env/server'
 
-const SITE_URL = env.VERCEL_URL || 'https://trialbro.saw-dev.site'
+const SITE_URL = env.VERCEL_URL ? `https://${env.VERCEL_URL}` : 'http://localhost:3000'
 
 export const TRIAL_BRO = {
   url: SITE_URL,
