@@ -4,7 +4,7 @@ import HeroSection from './HeroSection'
 import HowItWorks from './HowItWorks'
 import ProductsCatalog from './ProductsCatalog'
 import Testimonials from './Testimonials'
-import WhatweOffer from './WhatweOffer'
+import WhatWeOffer from './WhatWeOffer'
 
 export default function Main() {
   return (
@@ -12,7 +12,7 @@ export default function Main() {
       <HeroSection />
       <ProductsCatalog />
       <HowItWorks />
-      <WhatweOffer />
+      <WhatWeOffer />
       <Testimonials />
       <FAQ />
       <CTABanner />
@@ -24,7 +24,7 @@ export {
   HeroSection,
   ProductsCatalog,
   HowItWorks,
-  WhatweOffer,
+  WhatWeOffer,
   Testimonials,
   FAQ,
   CTABanner,

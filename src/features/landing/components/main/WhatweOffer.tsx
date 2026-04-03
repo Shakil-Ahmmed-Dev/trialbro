@@ -1,5 +1,3 @@
-export default function WhatweOffer() {
-  return (
-    <div>WhatweOffer</div>
-  )
+export default function WhatWeOffer() {
+  return <div>WhatWeOffer</div>
 }
