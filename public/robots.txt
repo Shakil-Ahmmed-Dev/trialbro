@@ -1,0 +1,7 @@
+# Robots.txt for Trial Bro
+# https://trialbro.saw-dev.site/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://trialbro.saw-dev.site/sitemap.xml

@@ -1,4 +1,5 @@
 import { createEnv } from '@t3-oss/env-core'
+import { vercel } from "@t3-oss/env-core/presets-zod";
 import { z } from 'zod'
 import { config } from 'dotenv'
 
@@ -29,4 +30,5 @@ export const env = createEnv({
    * explicitly specify this option as true.
    */
   emptyStringAsUndefined: true,
+  extends: [vercel()]
 })
