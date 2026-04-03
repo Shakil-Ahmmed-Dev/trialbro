@@ -46,12 +46,12 @@ function ToolCard({
 }) {
   return (
     <div
-      className={`bg-card p-6 rounded-xl border border-primary/80 shadow-sm flex items-center gap-4 ${className}`}
+      className={`bg-card p-6 rounded-xl border border-primary/80 shadow-sm flex items-center gap-4 transition-shadow duration-300 hover:shadow-lg ${className}`}
     >
       <div
         className={`w-12 h-12 ${tool.color} rounded-lg flex items-center justify-center text-white`}
       >
-        <tool.icon className="size-6" />
+        <tool.icon className="size-6" aria-hidden="true" />
       </div>
       <div>
         <p className="font-bold">{tool.name}</p>
@@ -63,11 +63,11 @@ function ToolCard({
 
 export default function HeroSection() {
   return (
-    <>
-      <section className="p-20 px-4 md:px-6 overflow-hidden">
+    <div>
+      <div className="py-20 md:py-24 px-4 md:px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
           <div className="flex-1 text-left">
-            <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-6">
+            <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.1] mb-6">
               Get Premium AI Tools
               <br />
               <span className="text-primary">for Less.</span>
@@ -84,7 +84,7 @@ export default function HeroSection() {
               <Button
                 size="xl"
                 variant="outline"
-                className="text-lg px-8 border-2"
+                className="text-lg px-8 border-2 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
                 How it Works
               </Button>
@@ -103,9 +103,9 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section className="py-20 bg-muted/50">
+      <section className="py-20 md:py-24 bg-muted/50">
         <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
           <p className="text-sm font-medium uppercase tracking-widest text-muted-foreground mb-12">
             Trusted by 10,000+ users globally
@@ -122,6 +122,6 @@ export default function HeroSection() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   )
 }
