@@ -21,6 +21,11 @@ interface MyRouterContext {
 export const Route = createRootRouteWithContext<MyRouterContext>()({
   head: () => ({
     ...generateMetadata({
+      charSet: "utf-8",
+      viewport: {
+        width: "device-width",
+        initialScale: 1,
+      },
       description: TRIAL_BRO.description,
       openGraph: {
         title: TRIAL_BRO.title,
