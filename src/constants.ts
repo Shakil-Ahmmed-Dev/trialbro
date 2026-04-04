@@ -1,6 +1,7 @@
-import { env } from './lib/t3env/server'
+// import { env } from './lib/t3env/server'
 
-const SITE_URL = env.VERCEL_URL ? `https://${env.VERCEL_URL}` : 'http://localhost:3000'
+// const SITE_URL = env.VERCEL_URL ? `https://${env.VERCEL_URL}` : 'http://localhost:3000'   // FIXME: using env.VERCEL_URL (server side environment variable) hampers javascript, devtools doesn't load, blur doesn't work
+const SITE_URL = 'http://localhost:3000'
 
 export const TRIAL_BRO = {
   url: SITE_URL,
